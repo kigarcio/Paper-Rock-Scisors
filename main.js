@@ -36,7 +36,7 @@ const clickPaper = () => {
 		pInfo.textContent = "Przegrana!";
 		btnPaper.classList.toggle("lose");
 	}
-    disableButtons()
+	disableButtons();
 };
 
 const clickRock = () => {
@@ -51,7 +51,7 @@ const clickRock = () => {
 		pInfo.textContent = "Wygrana!";
 		btnRock.classList.toggle("win");
 	}
-    disableButtons()
+	disableButtons();
 };
 const clickScisors = () => {
 	computerAnswer();
@@ -65,12 +65,12 @@ const clickScisors = () => {
 		pInfo.textContent = "Remis!";
 		btnScisors.classList.toggle("remis");
 	}
-    disableButtons()
+	disableButtons();
 };
 const disableButtons = () => {
-    btnPaper.disabled = true;
-    btnRock.disabled = true;
-    btnScisors.disabled = true;
+	btnPaper.disabled = true;
+	btnRock.disabled = true;
+	btnScisors.disabled = true;
 };
 
 function refreshPage() {
