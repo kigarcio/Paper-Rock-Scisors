@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-size: 62.5%;
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+	background-color: #333;
+	color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: monospace;
+}
+
+.box{
+    width: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 25px;
+    border: 2px solid black;
+    box-shadow: 0 0 15px black;
+}
+.box__title{
+    padding: 1rem;
+
+    h1{
+      font-size: 2rem; 
+      margin-bottom: 1rem;
+    }
+    p{
+        text-align: center;
+        font-size: 1.4rem;
+    }
+}
+.box__game--icon{
+    /* padding: 4rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    i{
+        font-size: 8rem;
+    }
+}
+.box__game--btn{
+    padding: 1rem;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.box__game--btn button{
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 2px solid black;
+    background:none ;
+
+    i{
+        font-size: 2rem;
+        pointer-events: none;
+    }
+}
+.box__game--reset{
+    padding: 1rem;
+    width: 600px;
+    display: flex;
+    justify-content: space-around;
+}
+.box__game--reset button{
+  
+    padding: 0.5rem;
+    border-radius: 15px;
+    border: 2px solid black;
+    background:none ;
+    font-size: 1.2rem;
+}
+button{
+    cursor: pointer;
+}
+.win{
+    background-color: rgb(180, 255, 161) !important;
+}
+.lose{
+    background-color: rgb(236, 122, 122)!important;
+}
+.remis{
+    background-color: rgb(101, 101, 240)!important;
+}
